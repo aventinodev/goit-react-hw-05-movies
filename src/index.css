@@ -1,4 +1,15 @@
 @import-normalize; /* bring in normalize.css styles */
+* html {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
@@ -7,9 +18,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #757575;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+div {
+  margin: 0;
+}
+ul {
+  /* list-style: none; */
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 16px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  color: #212121;
 }
