@@ -1,0 +1,52 @@
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  max-width: 1140px;
+
+  padding: 16px;
+}
+
+.link {
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid rgb(17, 141, 148);
+  color: rgb(17, 141, 148);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.link.active {
+  background-color: rgb(17, 141, 148);
+  color: white;
+}
+
+/* ============================ */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+a:not(:last-child) {
+  margin-right: 16px;
+}
