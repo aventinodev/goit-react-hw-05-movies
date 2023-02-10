@@ -1,22 +1,22 @@
 import { NavLink } from 'react-router-dom';
-import css from './Header.module.css';
+import css from './Navbar.module.css';
 
-const getClassName = ({ isActive }) => {
-  const className = isActive ? `${css.link} ${css.active}` : css.link;
-  return className;
-};
-export const Header = () => {
+// const getClassName = ({ isActive }) => {
+//   const className = isActive ? `${css.link} ${css.active}` : css.link;
+//   return className;
+// };
+export const Navbar = () => {
   return (
     <div className={css.wrapper}>
       <div className="container">
         <ul className={css.nav}>
           <li>
-            <NavLink className={getClassName} to="/">
+            <NavLink className={css.link} to="/">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className={getClassName} to="/movies">
+            <NavLink className={css.link} to="/movies">
               Movies
             </NavLink>
           </li>

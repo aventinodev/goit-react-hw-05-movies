@@ -4,7 +4,7 @@
   gap: 16px;
   max-width: 1140px;
 
-  padding: 16px;
+  /* padding: 16px 0; */
 }
 
 .link {
@@ -18,7 +18,7 @@
   font-size: 24px;
 }
 
-.link.active {
+.link:global(.active) {
   background-color: rgb(17, 141, 148);
   color: white;
 }
