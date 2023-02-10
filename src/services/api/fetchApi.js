@@ -4,7 +4,7 @@ const BASE_URL = 'https://api.themoviedb.org/3/';
 const API_KEY = '31449444226ba6345698313fe055564a';
 
 const TRENDING_MOVIE = 'trending/movie/day';
-const SEARCH_MOVIE = 'search/movie';
+// const SEARCH_MOVIE = 'search/movie';
 
 const instance = axios.create({
   baseURL: BASE_URL,

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+
 import { Loader } from 'components/Loader/Loader';
 import { toast } from 'react-toastify';
 import { getTrending } from 'services/api/fetchApi';
