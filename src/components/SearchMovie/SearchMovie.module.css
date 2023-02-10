@@ -1,0 +1,41 @@
+.wrapper {
+  padding: 16px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 600px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.input {
+  display: inline-block;
+  padding: 8px;
+  line-height: 1.2;
+  width: 100%;
+  font-size: 24px;
+  border-color: #b8b8b8;
+}
+.input::placeholder {
+  font: inherit;
+  font-size: 18px;
+}
+.btn {
+  position: absolute;
+  /* top: 50%; */
+  right: 0;
+  /* transform: translateY(-50%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-color: transparent;
+  opacity: 0.6;
+}
+.btn:hover {
+  opacity: 1;
+  scale: 1.2;
+}
