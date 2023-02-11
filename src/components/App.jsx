@@ -9,6 +9,7 @@ import { Reviews } from 'components/Reviews/Reviews';
 import { NotFoundPage } from 'pages/NotFoundPage';
 
 import { Navbar } from './Navbar/Navbar';
+
 import '../index.css';
 // import { Loader } from './Loader/Loader';
 
@@ -23,7 +24,7 @@ import '../index.css';
 
 export const App = () => {
   return (
-    <>
+    <div>
       <Navbar />
       {/* <Suspense fallback={<Loader />}> */}
       <Routes>
@@ -36,6 +37,6 @@ export const App = () => {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       {/* </Suspense> */}
-    </>
+    </div>
   );
 };
