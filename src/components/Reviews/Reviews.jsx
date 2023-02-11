@@ -5,7 +5,7 @@ import { getMovieReviews } from 'services/api/fetchApi';
 import { toast } from 'react-toastify';
 import css from 'components/Reviews/Reviews.module.css';
 
-export const Reviews = () => {
+const Reviews = () => {
   const { id } = useParams();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -38,3 +38,4 @@ export const Reviews = () => {
     </ul>
   );
 };
+export default Reviews;

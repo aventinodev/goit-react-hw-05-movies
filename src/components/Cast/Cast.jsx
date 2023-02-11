@@ -7,7 +7,7 @@ import css from 'components/Cast/Cast.module.css';
 
 import { Loader } from 'components/Loader/Loader';
 
-export const Cast = () => {
+const Cast = () => {
   const { id } = useParams();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -49,3 +49,4 @@ export const Cast = () => {
     </ul>
   );
 };
+export default Cast;

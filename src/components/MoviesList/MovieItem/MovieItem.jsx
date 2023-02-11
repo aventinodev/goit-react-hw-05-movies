@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import NoImageAvailable from '../../../images/NoImageAvailable.jpg';
 import css from '../MovieItem/MovieItem.module.css';
 
-export const MovieItem = ({ id, title, pathSrc }) => {
+const MovieItem = ({ id, title, pathSrc }) => {
   const pathImg = 'https://image.tmdb.org/t/p/w300/';
   const location = useLocation();
 
@@ -32,3 +32,5 @@ MovieItem.propTypes = {
   pathSrc: PropTypes.string,
   title: PropTypes.string,
 };
+
+export default MovieItem;

@@ -5,9 +5,8 @@ import css from './Navbar.module.css';
 //   const className = isActive ? `${css.link} ${css.active}` : css.link;
 //   return className;
 // };
-export const Navbar = () => {
+const Navbar = () => {
   return (
-    // <div className={css.wrapper}>
     <div className="container">
       <ul className={css.nav}>
         <li>
@@ -22,6 +21,6 @@ export const Navbar = () => {
         </li>
       </ul>
     </div>
-    // </div>
   );
 };
+export default Navbar;

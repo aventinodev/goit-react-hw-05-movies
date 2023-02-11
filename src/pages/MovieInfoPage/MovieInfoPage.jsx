@@ -15,7 +15,7 @@ import { BsArrowLeftShort } from 'react-icons/bs';
 import { iconSize } from 'services/utils/iconSize';
 import css from '../MovieInfoPage/MovieInfoPage.module.css';
 
-export const MovieInfoPage = () => {
+const MovieInfoPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from || '/movies';
@@ -127,3 +127,4 @@ export const MovieInfoPage = () => {
     </main>
   );
 };
+export default MovieInfoPage;

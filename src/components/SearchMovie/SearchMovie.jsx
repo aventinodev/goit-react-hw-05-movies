@@ -6,7 +6,7 @@ import { iconSize } from 'services/utils/iconSize';
 
 import css from '../SearchMovie/SearchMovie.module.css';
 
-export const SearchMovie = ({ onSubmit }) => {
+const SearchMovie = ({ onSubmit }) => {
   const [query, setQuery] = useState('');
 
   const handleChange = e => {
@@ -55,3 +55,4 @@ export const SearchMovie = ({ onSubmit }) => {
 SearchMovie.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
+export default SearchMovie;

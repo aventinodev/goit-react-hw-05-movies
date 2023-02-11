@@ -5,9 +5,9 @@ import { Loader } from 'components/Loader/Loader';
 import { showError } from 'services/utils/showError';
 import { getTrending } from 'services/api/fetchApi';
 
-import { MoviesList } from 'components/MoviesList/MoviesList';
+import MoviesList from 'components/MoviesList/MoviesList';
 
-export const HomePage = () => {
+const HomePage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [items, setItems] = useState([]);
@@ -36,3 +36,4 @@ export const HomePage = () => {
     </main>
   );
 };
+export default HomePage;

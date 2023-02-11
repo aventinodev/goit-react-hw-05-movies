@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { BsArrowLeftShort } from 'react-icons/bs';
 import { iconSize } from 'services/utils/iconSize';
 
-export const NotFoundPage = () => {
+const NotFoundPage = () => {
   return (
     <div className="container">
       <h2 className="title">Page not found</h2>
@@ -20,3 +20,4 @@ export const NotFoundPage = () => {
     </div>
   );
 };
+export default NotFoundPage;

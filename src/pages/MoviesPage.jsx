@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Loader } from 'components/Loader/Loader';
 
-import { SearchMovie } from 'components/SearchMovie/SearchMovie';
-import { MoviesList } from 'components/MoviesList/MoviesList';
+import SearchMovie from 'components/SearchMovie/SearchMovie';
+import MoviesList from 'components/MoviesList/MoviesList';
 import { searchMovies } from 'services/api/fetchApi';
 import { showError } from 'services/utils/showError';
 
-export const MoviesPage = () => {
+const MoviesPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [items, setItems] = useState([]);
@@ -49,3 +49,4 @@ export const MoviesPage = () => {
     </main>
   );
 };
+export default MoviesPage;
