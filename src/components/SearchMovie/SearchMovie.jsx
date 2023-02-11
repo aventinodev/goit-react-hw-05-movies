@@ -17,13 +17,9 @@ const SearchMovie = ({ onSubmit }) => {
     e.preventDefault();
     if (query.trim() === '') {
       return alert('Enter your regust');
-      // return toast.warn('Enter your regust', {
-      //   theme: 'colored',
-      //   position: 'top-center',
-      // });
     }
     onSubmit(query);
-    e.target.reset();
+    // e.target.reset();
   };
 
   return (
