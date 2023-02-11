@@ -1,0 +1,19 @@
+.list {
+  list-style: none;
+  display: grid;
+  max-width: calc(100vw - 48px);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 16px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+.imgWrap {
+  margin-bottom: 16px;
+}
+.text {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #757575;
+}
