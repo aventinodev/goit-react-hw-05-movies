@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-
+import NoImageAvailable from '../../../images/NoImageAvailable.jpg';
 import css from '../MovieItem/MovieItem.module.css';
 
 export const MovieItem = ({ id, title, pathSrc }) => {
@@ -12,7 +13,7 @@ export const MovieItem = ({ id, title, pathSrc }) => {
         <div className={css.movieWrap}>
           <div className={css.imgWrap}>
             <img
-              src={`${pathImg}${pathSrc}`}
+              src={pathSrc ? `${pathImg}${pathSrc}` : NoImageAvailable}
               alt={title}
               className={css.imgMovie}
               loading="lazy"
@@ -25,4 +26,9 @@ export const MovieItem = ({ id, title, pathSrc }) => {
       </Link>
     </li>
   );
+};
+MovieItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  pathSrc: PropTypes.string,
+  title: PropTypes.string,
 };
