@@ -1,11 +1,8 @@
-// import PropTypes from 'prop-types';
-
-// import { useNavigate } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
 import { useState } from 'react';
-// import { FcFilmReel } from 'react-icons/fc';
+
 import { ImSearch } from 'react-icons/im';
-import { iconSize } from 'services/iconSize';
+import { iconSize } from 'services/utils/iconSize';
 
 import css from '../SearchMovie/SearchMovie.module.css';
 
@@ -17,10 +14,10 @@ export const SearchMovie = ({ onSubmit }) => {
   };
 
   const handleSubmit = e => {
-    e.preventDafault();
+    e.preventDefault();
     if (query.trim() === '') {
       return alert('Enter your regust');
-      // toast.warn('Enter your regust', {
+      // return toast.warn('Enter your regust', {
       //   theme: 'colored',
       //   position: 'top-center',
       // });
@@ -39,6 +36,7 @@ export const SearchMovie = ({ onSubmit }) => {
           value={query}
           placeholder="Enter your request"
           onChange={handleChange}
+          // required
         />
 
         <button className={css.btn} type="submit">
@@ -52,4 +50,8 @@ export const SearchMovie = ({ onSubmit }) => {
       </form>
     </div>
   );
+};
+
+SearchMovie.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
