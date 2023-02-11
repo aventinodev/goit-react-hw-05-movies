@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 // import { Cast } from 'components/Cast/Cast';
 // import { Reviews } from 'components/Reviews/Reviews';
 // import { NotFoundPage } from 'pages/NotFoundPage';
+
 import { Navbar } from './Navbar/Navbar';
 import '../index.css';
 import { Loader } from './Loader/Loader';
