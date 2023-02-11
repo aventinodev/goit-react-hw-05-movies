@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 
 import { Loader } from 'components/Loader/Loader';
-import { toast } from 'react-toastify';
+
+import { showError } from 'services/utils/showError';
 import { getTrending } from 'services/api/fetchApi';
 
 import { MoviesList } from 'components/MoviesList/MoviesList';
@@ -16,11 +17,7 @@ export const HomePage = () => {
 
     getTrending()
       .then(({ results }) => {
-        const movies = results.map(({ id, original_title, poster_path }) => {
-          return { id, original_title, poster_path };
-        });
-
-        setItems([...movies]);
+        setItems([...results]);
       })
       .catch(error => {
         setError(error);
@@ -33,11 +30,7 @@ export const HomePage = () => {
       <div className="container">
         <h1 className="title">Trending today</h1>
         {isLoading && <Loader />}
-        {error &&
-          toast.error('Somthing wrong. Try again', {
-            theme: 'colored',
-            position: 'top-center',
-          })}
+        {error && showError()}
         <MoviesList movies={items} />
       </div>
     </main>
