@@ -37,7 +37,7 @@ const MoviesPage = () => {
     setItems([]);
   };
 
-  const showMessage = query => {
+  const showMessage = () => {
     return alert('We did not find such movie');
   };
   return (
