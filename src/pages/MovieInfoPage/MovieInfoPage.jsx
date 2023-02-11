@@ -81,7 +81,7 @@ const MovieInfoPage = () => {
               src={poster_path ? `${pathImg}${poster_path}` : NoImageAvailable}
               alt={original_title}
               width="300"
-              height="500"
+              height="400"
             />
           </div>
           <div>

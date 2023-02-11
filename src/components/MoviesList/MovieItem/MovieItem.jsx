@@ -18,7 +18,7 @@ const MovieItem = ({ id, title, pathSrc }) => {
               className={css.imgMovie}
               loading="lazy"
               width="395"
-              height="569"
+              height="500"
             />
           </div>
           <h2 className={css.nameMovie}>{title}</h2>

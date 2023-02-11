@@ -45,7 +45,7 @@ const MoviesPage = () => {
       {error && showError()}
       <SearchMovie onSubmit={handleFormSubmit} />
       {isLoading && <Loader />}
-      <MoviesList movies={items} />
+      <MoviesList movies={items} onClick={query} />
     </main>
   );
 };

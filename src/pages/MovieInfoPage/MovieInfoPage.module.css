@@ -19,7 +19,7 @@
 }
 
 .wrapper {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 @media screen and (max-width: 767px) {
   .imgWrap {
@@ -61,11 +61,7 @@
   gap: 16px;
   margin-bottom: 16px;
 }
-.item {
-  border-radius: 4px;
-  padding: 8px;
-  border: none;
-}
+
 .link {
   border-radius: 4px;
   text-decoration: none;
