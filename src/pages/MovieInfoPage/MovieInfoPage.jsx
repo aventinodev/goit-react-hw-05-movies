@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 import { Loader } from 'components/Loader/Loader';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import NoImageAvailable from '../../images/NoImageAvailable.jpg';
 import { getMovieDetails } from 'services/api/fetchApi';
 import { BsArrowLeftShort } from 'react-icons/bs';
@@ -124,6 +124,7 @@ const MovieInfoPage = () => {
           <Outlet />
         </Suspense>
       </div>
+      <ToastContainer />
     </main>
   );
 };
