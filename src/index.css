@@ -8,7 +8,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -77,4 +77,24 @@ image {
 .title {
   font-size: 32px;
   color: #212121;
+  margin-bottom: 16px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+}
+.link:hover,
+.link:focus {
+  background-color: rgb(36, 153, 153);
+  color: white;
+  fill: white;
 }
