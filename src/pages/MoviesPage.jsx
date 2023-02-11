@@ -30,7 +30,7 @@ export const MoviesPage = () => {
       })
       .catch(error => setError(error.message))
       .finally(() => setIsLoading(false));
-  }, [query]);
+  }, [query, setSearchParams]);
 
   const handleFormSubmit = query => {
     setSearchParams({ query: query });
