@@ -6,8 +6,8 @@ import { iconSize } from 'services/utils/iconSize';
 
 import css from '../SearchMovie/SearchMovie.module.css';
 
-const SearchMovie = ({ onSubmit }) => {
-  const [query, setQuery] = useState('');
+const SearchMovie = ({ onSubmit, initialState }) => {
+  const [query, setQuery] = useState(initialState ?? '');
 
   const handleChange = e => {
     setQuery(e.target.value.toLowerCase());

@@ -43,7 +43,7 @@ const MoviesPage = () => {
   return (
     <main>
       {error && showError()}
-      <SearchMovie onSubmit={handleFormSubmit} />
+      <SearchMovie onSubmit={handleFormSubmit} initialState={query} />
       {isLoading && <Loader />}
       <MoviesList movies={items} onClick={query} />
     </main>
